@@ -51,12 +51,11 @@ Press Ctrl-C to quit.)
 
 - [Use the database.](use url;)
 
-- [Once you are done with the database creation, then you should run the SQL script to create the table.](CREATE TABLE `url_info` ( 
-`id` INT NOT NULL AUTO_INCREMENT ,  
+- [Once you are done with the database creation, then you should run the SQL script to create the table.](CREATE TABLE `url_info` (   
 `long_url` VARCHAR(200) NULL DEFAULT NULL ,  
 `short_url` VARCHAR(200) NULL DEFAULT NULL ,
 `created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,    
-PRIMARY KEY  (`id`)
+PRIMARY KEY  (`short_url`)
 ) ENGINE = InnoDB   DEFAULT CHARSET=latin1 ;)
 
 - [Make sure what table you have created.](SHOW tables;
@@ -66,6 +65,8 @@ PRIMARY KEY  (`id`)
 +--------------------+
 | url_info           |
 +--------------------+)
+
+- [The statistics folder shows the details of the short link entered.](http://127.0.0.1:8080/statistics/(__SHORT_URL__))
 
 - [Proceed to use any API Test tool, POSTMAN was used in the development stage.](www.postman.com)
 

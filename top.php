@@ -1,6 +1,5 @@
 <?php
    require __DIR__.'/controller/mode.php';
-
    //open database connection
     $database = new dbConnect();
     $db = $database->openConnection(); 
@@ -28,7 +27,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>URL Shortner | URL Service</title>
+  <title>URL Shortner | URL Service | Custom Free Link Shortner</title>
   <meta name="description" content="API for URL Shortner In PHP">
   <meta name="keywords" content="API, URL Shortner, URL System In PHP">
   <meta name="author" content="Oluben">

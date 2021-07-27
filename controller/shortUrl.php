@@ -153,7 +153,7 @@ class shortUrl
     		throw new Exception("This URL Does Not Exist");		
     	}
     	//return result
-    	var_dump($urlRow);
+    	return $urlRow;
     }
 
         //get the url from database 

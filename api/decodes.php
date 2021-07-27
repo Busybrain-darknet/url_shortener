@@ -17,7 +17,6 @@
     $link = json_decode(file_get_contents("php://input"), true);   
     $seg = $link['url'];
     $url = explode("/", parse_url($seg, PHP_URL_PATH));
-
 //Process long URL
     if (!empty($url = $url[1])){
         try {

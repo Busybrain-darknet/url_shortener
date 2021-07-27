@@ -33,6 +33,40 @@ Press Ctrl-C to quit.)
 
 - [Check your project on the following url:](http://127.0.0.1:8080)
 
+- [Access the database root user via command-line to create the database.](mysql -u root -p)
+
+- [Create a new MySQL database.](CREATE DATABASE url;)
+
+- [Check the database.](SHOW DATABASES;
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| url           |
+| sys                |
++--------------------+)
+
+- [Use the database.](use url;)
+
+- [Once you are done with the database creation, then you should run the SQL script to create the table.](CREATE TABLE `url_info` ( 
+`id` INT NOT NULL AUTO_INCREMENT ,  
+`long_url` VARCHAR(200) NULL DEFAULT NULL ,  
+`short_url` VARCHAR(200) NULL DEFAULT NULL ,
+`created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,    
+PRIMARY KEY  (`id`)
+) ENGINE = InnoDB   DEFAULT CHARSET=latin1 ;)
+
+- [Make sure what table you have created.](SHOW tables;
+
++--------------------+
+| Tables_in_url |
++--------------------+
+| url_info           |
++--------------------+)
+
 - [Proceed to use any API Test tool, POSTMAN was used in the development stage.](www.postman.com)
 
 

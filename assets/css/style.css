@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #e5e5e5;
-  background: #000000;
+  background: url("../img/bg.jpg");
   background-size: cover;
   position: relative;
 }

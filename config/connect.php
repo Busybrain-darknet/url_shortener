@@ -22,10 +22,10 @@ class dbConnect
     private $server = "mysql:host=localhost;dbname=url";
     private $user = "root";
     private $pass = "";
-    private $options = array(
+    private $options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-    );
+    ];
     public $con;
     
      /* Function for opening connection */

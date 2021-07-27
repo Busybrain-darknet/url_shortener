@@ -10,7 +10,7 @@
      ---------------------------------------------------------------------
      * URL to your project root. Typically this will be your base URL:
      */
-    define('BASE_URL', 'http://url-shortner.test/');
+    define('BASE_URL', 'http://127.0.0.1:8080/');
 /**
 * --------------------------------------------------------------------
      * Database Connection
